@@ -1,0 +1,15 @@
+.table {
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+
+    .table thead th,
+    .table tbody th,
+    .table tbody td {
+        border: solid black;
+    }
+
+    .table th,
+    .table td {
+        padding: 5px;
+    }

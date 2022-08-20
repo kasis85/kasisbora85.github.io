@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            margin: 1em 2em;
+            font-size: 30px;
+        }
+
+        .panel {
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .panel-content {
+            display:none;
+        }
+
+        .show {
+            display:initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2 class="panel-header">Header 1</h2>
+            <div class="panel">
+                <div class="panel-content">Panel Body 1</div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="panel-header">Header 2</h2>
+            <div class="panel">
+                <div class="panel-content">Panel Body 2</div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="panel-header">Header 3</h2>
+            <div class="panel">
+                <div class="panel-content">Panel Body 3</div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="panel-header">Header 4</h2>
+            <div class="panel">
+                <div class="panel-content">Panel Body 4</div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const header2 = document.querySelectorAll('.panel-header');
+        console.log(header2);
+
+        for (const header of header2) {
+            header.addEventListener('click', event => {
+                let panelbody = header.parentNode.querySelector('.panel-content');
+                panelbody.classList.toggle('show');
+            })
+        }
+    </script>
+</body>
+
+</html>

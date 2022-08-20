@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Solutions Consulting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <title>Example Consulting Pvt. Ltd.</title>
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Example Consulting Pvt. Ltd.</h1>
+    <hr />
+    <h2>Contact Us</h2>
+    <div>
+        <label>Phone: <a href="tel:001-123-456-789">+001-123-456-789</a></label>
+    </div>
+    <div>
+    <label>Email: <a href="email:hello@example.com">hello@example.com</a></label>
+    </div>
+    <h2>Drop A Message</h2>
+    <p>Please drop us a message by filling out the following form, and we'll get back to you withing 2 working days'</p>
+    <p>Fields marked with <span class="asterisk">*</span> are required</p>
+    <form>
+        <label>
+            Your Name<span class="asterisk">*</span><br />
+            <input type="text" placeholder="John Doe" required />
+        </label>
+        <br />
+        <br />
+        <label>
+            Your Email<span class="asterisk">*</span><br />
+            <input type="email" placeholder="john.doe@example.com" required />
+        </label>
+        <br />
+        <br />
+        <label>
+            What Are You Looking To Build?<span class="asterisk">*</span><br />
+            <select name="drop" id="drop" required="">
+                <option value=" " selected="">-- Choose one --</option>
+                <option value="blog">Blog</option>
+                <option value="store">Store</option>
+                <option value="game">Game</option>
+                <option value="other">Other</option>
+            </select>
+        </label>
+        <br />
+        <br />
+        <fieldset class="support">
+            <legend>Platform you plan to support <span class="asterisk">*</span></legend>
+            <label><input type="checkbox" name="platform" value="web" checked="">Web</label>
+            <label><input type="checkbox" name="platform" value="mobile">Mobile</label>
+            <label><input type="checkbox" name="platform" value="desktop">Desktop</label>
+        </fieldset>
+        <br />
+        <br />
+        <label>
+            Message<span class="asterisk">*</span><br />
+            <textarea cols="50" rows="5"></textarea>
+        </label>
+        <br />
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Send Message" />
+    </form>
+    <hr />
+    <footer>
+        &copy Example.com
+    </footer>
+</body>
+</html>

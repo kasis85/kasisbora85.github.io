@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .styled-para {
+            border: 1px solid black;
+            padding: 10px;
+            color: olive;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="p1"> first paragraph :- Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque nam beatae tempore in unde aliquam adipisci dignissimos dolorum doloremque! Doloremque, esse magnam aliquid quaerat ea error ipsa aliquam consequuntur.</p>
+    <p id="p2">Second paragraph :- Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rerum aut mollitia quisquam! Est veniam, harum dolor maxime, architecto atque ipsam esse consectetur assumenda itaque enim iusto velit nostrum quos!</p>
+    <p id="p3">Third paragraph :- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum culpa inventore modi iste tempora? Vitae minus a, assumenda nam porro eveniet quae, velit voluptate eum dolor beatae obcaecati accusantium?</p>
+
+    <script>
+        const p1 = document.querySelector('#p1');
+        const p2 = document.querySelector('#p2');
+        const p3 = document.querySelector('#p3');
+
+        const newParaBefore = document.createElement('p');
+        newParaBefore.innerText = 'Inserted via javascript'
+        document.body.insertBefore(newParaBefore, p1);
+
+        const newParaAfter = document.createElement('p');
+        newParaAfter.innerText = 'Inserted via javascript';
+        document.body.appendChild(newParaAfter);
+
+        console.log(p1.innerText)
+
+        const span1 = document.createElement('span');
+        const span2 = document.createElement('span');
+        span1.innerText = 'span1 inserted via javascript';
+        span2.innerText = 'span2 inserted via javascript';
+
+        p1.removeChild(p1.childNodes[0]);
+        p1.appendChild(span1);
+        p1.appendChild(span2);
+
+
+        console.log(p2.getAttribute('id'));
+        p2.setAttribute('id', 'changedP2id');
+        console.log(p2.getAttribute('id'));
+        p2.setAttribute('name', 'paragraph2');
+        p3.setAttribute('style', 'background-color: crimson; color: white;');
+        let lastPara = document.querySelectorAll('p:last-child');
+        lastPara[0].classList.add('styled-para');
+    </script>
+</body>
+
+</html>

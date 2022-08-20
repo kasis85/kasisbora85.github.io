@@ -1,0 +1,83 @@
+﻿body {
+    font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.content-container {
+   
+    
+    margin-top: 80px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+h1{
+  margin-bottom:0;
+ 
+ }
+hr{
+    width:100%;
+}
+.team{
+    width:400px;
+    height:350px;
+    border:solid 1px;
+    border-radius:2px;
+    padding:10px 10px 10px 10px;
+    margin:25px 25px 25px 25px;
+    float:left;
+}
+.team:hover{
+    border:#3d8f9c solid 1px;
+}
+.excuse-btn {
+    color: white;
+    background-color: #d94a4a;
+    border: none;
+    border-radius: 2px;
+    height:30px;
+}
+.add-attendee-btn {
+    color: white;
+    background-color: #3d8f9c;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    padding-top: 2px;
+    margin-top:7px;
+}
+.add-attendee{
+    display:flex;
+    flex-direction:row;
+}
+.add-attendee-btn:active, .excuse-btn:active {
+    
+    box-shadow: grey 2px 2px;
+}
+.team.add-team-btn h2{
+    margin-left:190px;
+    margin-top:140px;
+    font-size:60px;
+}
+.add-team-btn:hover {
+    background-color: #8ad0db;
+    color:white;
+    transition:color 1s;
+    transition:background-color 1s;
+}
+.add-team-btn:active{
+    color:grey;
+    border: 3px solid #3d8f9c;
+}
+
+.bold-text{
+    font-weight:bold;
+}
+.small-text{
+    font-size:12px;
+}
+.descr{
+    color:dimgrey;
+}
+.Members{
+    display:flex;
+    flex-direction:row;
+}

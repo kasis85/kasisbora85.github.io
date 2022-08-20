@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/stylesheet-teams.css" />
+    <title>Teams</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="left">
+            <a href="#" class="hiddenmsg">MyMeetings</a>
+            <a href="calendar.html" class="active">Calendar</a>
+            <a href="meeting.html">Meeting</a>
+            <a href="teams.html">Teams</a>
+        </div>
+        <div class="right">
+            <a href="#" class="right" id="sp">hello<span>john.doe@example.com</span></a>
+            <a href="index.html" id="logout">Logout</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    
+        
+
+        
+        <div class="content-container">
+            <h1>Teams</h1>
+            <hr />
+            <p class="small-text descr">View and edit teams you are part of</p>
+
+
+            <div class="teams-container">
+                <div class="team">
+                    <p class="bold-text">Customer acquisition campaign</p>
+                    <p class="small-text">@customer-acquisition</p>
+                    <p class="descr">Team to come up with strategies to win over customers by end of FY21</p>
+                    <button class="excuse-btn">Excuse yourself</button>
+                    <hr />
+                    <div class="Members">
+                        <p class="bold-text">Members: </p>
+                        <p>john@example.com</p>
+                        <p>jane@example.com</p>
+                    </div>
+                    <select class="add-attendee" name="add-attendee">
+                        <option value="jane">jane@example.com</option>
+                        <option value="john">john@example.com</option>
+                        <option value="mary">mary%example.com</option>
+                    </select>
+                    <button class="add-attendee-btn">Add</button>
+                </div>
+                <div class="team">
+                    <p class="bold-text">MERN stack training</p>
+                    <p class="small-text">@mern-stack-training</p>
+                    <p class="descr">Group attending MERN stack training for website revamp project</p>
+                    <button class="excuse-btn">Excuse yourself</button>
+                    <hr />
+                    <div class="Members">
+                        <p class="bold-text">Members: </p>
+                        <p>jane@example.com</p>
+                        <p>mark@example.com</p>
+                    </div>
+                    <select class="add-attendee" name="add-attendee">
+                        <option value="jane">jane@example.com</option>
+                        <option value="john">john@example.com</option>
+                        <option value="mary">mary%example.com</option>
+                    </select>
+                    <button class="add-attendee-btn">Add</button>
+                </div>
+                <div class="team add-team-btn">
+                    <h2>+</h2>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    <br />
+    <hr />
+    <footer>
+        &copy meetingsApp
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        
+    </script>
+</body>
+</html>

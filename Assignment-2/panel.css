@@ -1,0 +1,74 @@
+.panel {
+    margin: 10px;
+    width: 60%;
+  }
+  .header {
+    border-radius: 0.35rem 0.35rem 0 0;
+    color: white;
+    padding: 5px 5px;
+  }
+  .body {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0 0 0.35rem 0.35rem;
+  }
+
+  .body-primary {
+    border: 1.7px solid navy;
+  }
+  .body-secondary {
+    border: 1.7px solid olive;
+  }
+  .body-error {
+    border: 1.7px solid crimson;
+  }
+
+  .header-primary {
+    background-color: navy;
+  }
+
+  .header-secondary {
+    background-color: olive;
+  }
+
+  .header-error {
+    background-color: crimson;
+  }
+
+  button
+  {
+      padding: 10px; 
+      border-radius: 5px;
+      border: 0;
+      margin: 5px;
+  }
+  .primary-btn {
+      background-color: navy;
+      color: white; 
+      
+  }
+  .primary-btn:hover
+  {
+      background-color: blue;
+
+  }
+  .secondary-btn {
+      background-color: olive;
+      color:white;
+  }
+  .secondary-btn:hover {
+      background-color: green;
+  }
+  .error-btn {
+      background-color: crimson;
+      color: white;
+  }
+  .error-btn:hover {
+      background-color: red;
+  }
+  .google-btn {
+      background-color: navy;
+      text-decoration: none;
+      color: white;
+  }
+
+  

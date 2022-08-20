@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/stylesheet-meeting.css" />
+    <title>Meetings</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="left">
+            <a href="#" class="hiddenmsg">MyMeetings</a>
+            <a href="calendar.html" class="active">Calendar</a>
+            <a href="meeting.html">Meeting</a>
+            <a href="teams.html">Teams</a>
+        </div>
+        <div class="right">
+            <a href="#" class="right" id="sp">hello<span>john.doe@example.com</span></a>
+            <a href="index.html" id="logout">Logout</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div class="content-container">
+        <div class="heading-container">
+            <h1>Meetings</h1>
+
+        </div>
+        <hr />
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'search-meeting')">Filter/Search meetings</button>
+            <button class="tablinks" onclick="openTab(event, 'add-meeting')">Add meeting</button>
+
+        </div>
+        <hr class="tabs-border"/>
+        <div id="search-meeting" class="tabcontent">
+            <div class="search-meeting-box1">
+                <h2>Search for meetings</h2>
+                <hr />
+                <label for="dates">Date</label>
+                <select id="dates" name="dates">
+                    <option value="all">ALL</option>
+                    <option value="past">PAST</option>
+                    <option value="today">TODAY</option>
+                    <option value="upcoming">UPCOMING</option>
+                </select>
+                <label for="search-box">Search for</label>
+                <input type="text" id="search-box" placeholder="Search using words which describe the meeting" />
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="search-meeting-box2">
+                <h3>Meetings matching search criteria</h3>
+                <hr />
+
+                <div class="meeting-1">
+                    <div class="date-time">
+                        <h4>12 September 2020</h4>
+                        <p>06:00-07:00</p>
+                    </div>
+                    <p>Project kickoff</p>
+                    <button class="excuse">Excuse yourself</button>
+                    <div class="attendee">
+                        <p class="attendee-label">Attendee:</p>
+                        <p>mark@example.com</p>
+                        <p>jane@example.com</p>
+                    </div>
+                    <select class="add-attendee" name="add-attendee">
+                        <option value="jane">jane@example.com</option>
+                        <option value="john">john@example.com</option>
+                        <option value="mary">mary%example.com</option>
+                    </select>
+                    <button class="add-attendee-btn">Add</button>
+                </div>
+
+                <div class="meeting-2">
+                    <div class="date-time">
+                        <h4>12 September 2020</h4>
+                        <p>09:00-10:30</p>
+                    </div>
+                    <p>AWS Architecture</p>
+                    <button class="excuse">Excuse yourself</button>
+                    <div class="attendee">
+                        <p class="attendee-label">Attendee:</p>
+                        <p>john@example.com</p>
+                        <p>jane@example.com</p>
+                    </div>
+                    <select class="add-attendee" name="add-attendee">
+                        <option value="jane">jane@example.com</option>
+                        <option value="john">john@example.com</option>
+                        <option value="mary">mary%example.com</option>
+                    </select>
+                    <button class="add-attendee-btn">Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="add-meeting" class="tabcontent">
+            <h2>Add a new meeting</h2>
+            <label for="date">Date</label>
+            <input type="date" />
+            <label for="start-time">Start time (hh:mm)</label>
+            <div class="start-time">
+                <input class="hour" type="number" min="0" max="23" value="0" />
+                <p>:</p>
+                <input class="min" type="number" min="0" max="59" value="0"/>
+            </div>
+            <label for="end-time">End time (hh:mm)</label>
+            <div class="end-time">
+                <input class="hour" type="number" min="0" max="23" value="0" />
+                <p>:</p>
+                <input class="min" type="number" min="0" max="59" value="0" />
+            </div>
+            <label for="description">Description</label>
+            <input type="text" placeholder="What is agenda of the meeting?" />
+            <label for="emails">Email IDs of attendees, or team's short</label>
+            <input type="text" placeholder="john@example.com,@annual-day,mark@example.com" />
+            <p class="add-meeting-text">Separate emailids/team short names by commas-team short name always login with @</p>
+            <button class="add-meeting-btn">Add meeting</button>
+        </div>
+    </div>
+
+
+    <br />
+    <hr />
+    <footer>
+        &copy meetingsApp
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        openTab(event, 'search-meeting');
+    </script>
+</body>
+</html>
