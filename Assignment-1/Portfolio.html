@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Solutions Consulting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .navigation {
+            padding: 0;
+            list-style-type: none;
+        }
+
+            .navigation li {
+                display: inline;
+            }
+        .table {
+            border-collapse: collapse;
+        }
+
+            .table thead th,
+            .table tbody th,
+            .table tbody td {
+                border: solid black;
+            }
+
+            .table th,
+            .table td {
+                padding: 5px;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Example Consulting Pvt. Ltd.</h1>
+    <hr />
+    <h2>Portfolio</h2>
+    <h3>Project 1</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit
+    </p>
+    <h3>Project 2</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit
+    </p>
+    <h2>Plans</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Plan</th>
+                <th scope="col" rowspan="2">Max Cluster Size</th>
+                <th scope="col" rowspan="2">Cloud Provider</th>
+                <th scope="col" colspan="2">Price in USD (per node)</th>
+            </tr>
+            <tr>
+                <th scope="col">Billed per hour</th>
+                <th scope="col">Billed per month</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="4">Free Tier</th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>AWS</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Azure</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GCP</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <th scope="row" rowspan="4">Basic</th>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>AWS</td>
+                <td>0.10</td>
+                <td>0.05</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Azure</td>
+                <td>0.15</td>
+                <td>0.18</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>GCP</td>
+                <td>0.20</td>
+                <td>0.10</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="4">Pro</th>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>AWS</td>
+                <td>0.07</td>
+                <td>0.03</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Azure</td>
+                <td>0.10</td>
+                <td>0.05</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>GCP</td>
+                <td>0.12</td>
+                <td>0.06</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="5">Hosting Plans and Pricing for various Cloud Providers</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+    <footer>
+        &copy Example.com
+    </footer>
+</body>
+</html>
